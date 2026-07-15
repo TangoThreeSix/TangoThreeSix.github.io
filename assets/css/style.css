@@ -158,11 +158,22 @@ nav a:hover {
 /* Paragraph spacing — clear visual breaks between thoughts */
 .post-content p {
   margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed #0d2b0d;
 }
 
 /* Also catch direct <p> children of <main> in case content isn't wrapped */
 main p {
   margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px dashed #0d2b0d;
+}
+
+/* Don't add separator on the last paragraph */
+.post-content p:last-child,
+main p:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .post-content blockquote {

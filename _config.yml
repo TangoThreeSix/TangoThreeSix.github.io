@@ -5,9 +5,6 @@ author: Jan
 
 markdown: kramdown
 permalink: /:title/
-paginate: 10
-paginate_path: /page/:num/
-
 # GitHub Pages plugins
 plugins:
   - jekyll-paginate

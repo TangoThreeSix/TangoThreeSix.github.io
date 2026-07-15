@@ -1,0 +1,28 @@
+title: // TANGO_THREE_SIX
+description: personal thoughts
+url: https://TangoThreeSix.github.io
+author: Jan
+
+markdown: kramdown
+permalink: /:title/
+paginate: 10
+paginate_path: /page/:num/
+
+# GitHub Pages plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+      comments: false
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

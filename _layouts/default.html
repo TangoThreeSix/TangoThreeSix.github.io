@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="prompt">[root@T3S ~]$ <a href="/">cat index</a></div>
+      <nav>
+        <a href="/">/home</a>
+        {% if site.posts.size > 0 %}
+        <a href="/" onclick="event.preventDefault(); window.scrollTo({top: document.querySelector('.post-list').offsetTop - 40, behavior:'smooth'})">/posts</a>
+        {% endif %}
+        <a href="/about">/about</a>
+        <a href="/feed.xml">/rss</a>
+      </nav>
+      <hr class="divider">
+    </header>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <hr class="divider">
+      <div class="prompt">[root@T3S ~]$ <span class="cursor">_</span></div>
+    </footer>
+  </div>
+</body>
+</html>

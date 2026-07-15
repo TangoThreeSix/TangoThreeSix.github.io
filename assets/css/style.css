@@ -1,0 +1,275 @@
+/* MATRIX TERMINAL THEME */
+/* https://TangoThreeSix.github.io */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  color: #33ff33;
+  font-family: 'Courier New', 'Courier', 'Liberation Mono', monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: #66ff66;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #33cc33;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 80px 24px;
+}
+
+/* --- HEADER --- */
+
+header {
+  margin-bottom: 48px;
+}
+
+.prompt {
+  color: #00cc00;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.prompt a {
+  color: #00cc00;
+}
+
+.prompt a:hover {
+  color: #ffffff;
+}
+
+nav {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #33ff33;
+  font-size: 14px;
+  text-transform: lowercase;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* --- DIVIDER --- */
+
+.divider {
+  border: none;
+  border-top: 1px solid #33ff33;
+  margin: 16px 0;
+  opacity: 0.4;
+}
+
+/* --- HOME PAGE --- */
+
+.site-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #33ff33;
+  margin-bottom: 8px;
+}
+
+.site-subtitle {
+  color: #00aa00;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+.section-header {
+  color: #00cc00;
+  font-size: 14px;
+  margin: 32px 0 16px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* --- POST LIST --- */
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed #1a331a;
+}
+
+.post-list li:last-child {
+  border-bottom: none;
+}
+
+.post-meta {
+  color: #006600;
+  font-size: 12px;
+  font-family: 'Courier New', monospace;
+}
+
+.post-list a {
+  font-size: 16px;
+  color: #33ff33;
+}
+
+.post-list a:hover {
+  color: #ffffff;
+}
+
+/* --- POST PAGES --- */
+
+.post-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #33ff33;
+  margin-bottom: 8px;
+}
+
+.post-date {
+  color: #006600;
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+
+.post-content {
+  color: #33ff33;
+}
+
+.post-content p {
+  margin-bottom: 16px;
+}
+
+.post-content blockquote {
+  border-left: 3px solid #33ff33;
+  padding-left: 16px;
+  margin: 16px 0;
+  color: #00cc00;
+  font-style: italic;
+}
+
+.post-content code {
+  background-color: #0a1a0a;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-family: 'Courier New', monospace;
+  color: #66ff66;
+}
+
+.post-content pre {
+  background-color: #0a1a0a;
+  padding: 16px;
+  overflow-x: auto;
+  margin: 16px 0;
+  border: 1px solid #1a331a;
+}
+
+.post-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.post-content ul, .post-content ol {
+  margin: 16px 0;
+  padding-left: 24px;
+}
+
+.post-content li {
+  margin-bottom: 8px;
+}
+
+.post-content h2 {
+  color: #00cc00;
+  font-size: 18px;
+  margin: 32px 0 16px 0;
+}
+
+.post-content h3 {
+  color: #00cc00;
+  font-size: 16px;
+  margin: 24px 0 12px 0;
+}
+
+/* --- ABOUT PAGE --- */
+
+.about-content {
+  color: #33ff33;
+}
+
+.about-content p {
+  margin-bottom: 16px;
+}
+
+/* --- PAGINATION --- */
+
+.pagination {
+  margin-top: 48px;
+  padding-top: 16px;
+  border-top: 1px dashed #1a331a;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+/* --- CURSOR BLINK --- */
+
+.cursor {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* --- FOOTER --- */
+
+footer {
+  margin-top: 64px;
+}
+
+/* --- RESPONSIVE --- */
+
+@media (max-width: 600px) {
+  .container {
+    padding: 24px 16px 60px 16px;
+  }
+  
+  body {
+    font-size: 15px;
+  }
+  
+  nav {
+    gap: 16px;
+  }
+}
+
+/* --- SELECTION --- */
+
+::selection {
+  background-color: #33ff33;
+  color: #000000;
+}
+
+::-moz-selection {
+  background-color: #33ff33;
+  color: #000000;
+}

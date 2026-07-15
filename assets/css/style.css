@@ -155,8 +155,14 @@ nav a:hover {
   color: #33ff33;
 }
 
+/* Paragraph spacing — clear visual breaks between thoughts */
 .post-content p {
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+/* Also catch direct <p> children of <main> in case content isn't wrapped */
+main p {
+  margin-bottom: 24px;
 }
 
 .post-content blockquote {

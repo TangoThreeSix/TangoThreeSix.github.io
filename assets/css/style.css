@@ -159,14 +159,14 @@ nav a:hover {
 .post-content p {
   margin-bottom: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px dashed #1a4a1a;
+  border-bottom: 1px solid #22cc22;
 }
 
 /* Also catch direct <p> children of <main> in case content isn't wrapped */
 main p {
   margin-bottom: 24px;
   padding-bottom: 24px;
-  border-bottom: 1px dashed #1a4a1a;
+  border-bottom: 1px solid #22cc22;
 }
 
 /* Don't add separator on the last paragraph */

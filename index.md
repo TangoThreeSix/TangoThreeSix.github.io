@@ -12,7 +12,7 @@ title: home
 <ul class="post-list">
   {% for post in site.posts %}
   <li>
-    <div class="post-meta">{{ post.date | date: "%Y-%m-%d %H:%M" }}</div>
+    <div class="post-meta">{{ post.date | date: "%Y-%m-%d %H:%M" }} UTC</div>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
   {% endfor %}

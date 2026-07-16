@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "your title here"
-date: YYYY-MM-DD
+date: YYYY-MM-DD HH:MM:SS
 ---
 
 write your thoughts here.

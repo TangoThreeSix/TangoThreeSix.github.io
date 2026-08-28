@@ -31,9 +31,9 @@ a:visited {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 40px 80px 40px;
+  padding: 40px 48px 80px 48px;
 }
 
 /* --- HEADER --- */
